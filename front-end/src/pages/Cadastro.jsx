@@ -10,6 +10,7 @@ import * as yup from "yup";
 import RadioCard from '../components/RadioCard';
 import { Input } from '../components/Form/Input';
 import { useHistory } from 'react-router-dom';
+import  api  from '../services/api';
 
 export default function Cadastro(props){
     const [tipo, setTipo] = useState("");
@@ -44,9 +45,9 @@ export default function Cadastro(props){
     });
   
     const signUpUser = async function login(form){
-      /*let response;
+      let response;
       try {
-        LÓGICA DE LOGIN
+        //LÓGICA DE LOGIN
         response = api.post("ROTA", {...form, tipo})
         
         
@@ -57,7 +58,7 @@ export default function Cadastro(props){
         
         
         alert('Erro ao cadastrar!');
-      }*/
+      }
       window.alert('TA AQUI');
     };
   
