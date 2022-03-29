@@ -6,7 +6,7 @@ const router = Router();
 
 export default [
   router.post("/", validateRequestSchema, ProfessorController.registerProfessor),
-  router.get("/:cpf", ProfessorController.consultProfessor),
-  router.delete("/:cpf", ProfessorController.deleteProfessor),
-  router.put("/:cpf", validateRequestSchema, ProfessorController.updateProfessor),
+  router.get("/:id", ProfessorController.consultProfessor),
+  router.delete("/:id", ProfessorController.deleteProfessor),
+  router.put("/:id", validateRequestSchema, ProfessorController.updateProfessor),
 ];
